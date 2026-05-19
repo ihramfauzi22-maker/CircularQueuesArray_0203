@@ -35,3 +35,12 @@ public:
             FRONT = 0;
             REAR = 0;
         }
+
+        // Cek apakah antrian kosng
+        if (FRONT == -1)
+        {
+            FRONT = 0;
+            REAR = 0;
+        }
+        else
+        
