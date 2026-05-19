@@ -80,3 +80,16 @@ public:
     }
 }
 
+void display()
+    {
+        int FRONT_position = FRONT;
+        int REAR_position = REAR;
+
+        // cek apakah antrian kosong
+        if (FRONT == -1)
+        {
+            cout << "\nQueue is empty\n";
+            return;
+        }
+
+        
