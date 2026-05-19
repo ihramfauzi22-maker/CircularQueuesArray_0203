@@ -64,4 +64,19 @@ public:
 
         cout << "\nThe number deleted from the queue is: " << queue_array[FRONT] << "\n";
 
-       
+        // cek apakah antrian hanya memiliki satu elemen
+        if (FRONT == REAR)
+        {
+            FRONT = -1;
+            REAR = -1;
+        }
+        else
+        {
+            // jika FRONT berada di posisi terakhir, maka kembali ke awal array
+            if (FRONT == max - 1)
+                FRONT = 0;
+            else
+                FRONT = FRONT + 1;  
+    }
+}
+
